@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kylab.androidthingshx711">
+
+    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <uses-library android:name="com.google.android.things" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.IOT_LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HxMainActivity" />
+
+        <service
+            android:name=".services.MyUaService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.FoodStorageActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.FoodWeightingActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.ScreenProtectActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.FoodExtractionActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.FoodManageActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.SetActivity"
+            android:theme="@style/Theme.AppCompat" />
+
+        <service
+            android:name=".services.MyHttpService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.MenuActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.DietActivity"
+            android:theme="@style/Theme.AppCompat"/>
+    </application>
+
+</manifest>

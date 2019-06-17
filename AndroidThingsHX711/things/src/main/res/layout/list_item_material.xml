@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/list_item_material_Image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/main_rectangle2" />
+
+    <Button
+        android:id="@+id/list_item_material_handle_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/list_item_material_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_toLeftOf="@id/list_item_material_handle_button"
+        android:layout_toRightOf="@id/list_item_material_Image"
+        android:padding="4dp"
+        android:textStyle="bold"
+        tools:text="material name" />
+
+    <TextView
+        android:id="@+id/list_item_material_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_below="@id/list_item_material_name_text_view"
+        android:layout_toLeftOf="@id/list_item_material_handle_button"
+        android:layout_toRightOf="@id/list_item_material_Image"
+        android:padding="4dp"
+        tools:text="material date" />
+
+    <ImageView
+        android:id="@+id/image_state_View"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="253dp"
+        android:src="@color/colorPrimary"
+         />
+
+</RelativeLayout>
