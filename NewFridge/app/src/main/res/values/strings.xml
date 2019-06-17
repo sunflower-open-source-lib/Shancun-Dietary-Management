@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">冰箱伴侣</string>
+    <string name ="food">食材</string>
+    <string name ="foodmenu">食谱</string>
+    <string name = "record">健康建议</string>
+    <string name = "me">我</string>
+    <string name="select_date">选择时间</string>
+    <string name="current_date">当前时间</string>
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="One">NFC添加食材</string>
+    <string name="Two">二维码添加食材</string>
+    <string name="Three">取食材</string>
+
+    <string name="scan_text">扫一扫</string>
+    <string name="cellphone_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="finish">完成</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="id_code">验证码</string>
+    <string name="get_id_code">获取验证码</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="lose_img">图片丢了</string>
+    <string name="food_manage">食材管理</string>
+    <string name="menu_tip">食谱推荐</string>
+    <string name="health_tip">健康建议</string>
+    <string name="my_information">个人信息</string>
+    <string name="my_refrigerator">我的冰箱</string>
+    <string name="my_family">我的家庭</string>
+    <string name="signUp">注册</string>
+    <string name="loginIn">登录</string>
+    <string name="myInfo">个人信息</string>
+    <string name="checkNew">检查更新</string>
+    <string name="menu">收藏菜谱</string>
+    <string name="family">家庭组</string>
+    <string name="username">用户名</string>
+</resources>

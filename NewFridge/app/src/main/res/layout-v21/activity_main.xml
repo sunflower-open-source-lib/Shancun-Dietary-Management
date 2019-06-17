@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/white" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:elevation="6dp"
+                            app:cardCornerRadius="50dp">
+
+                            <ImageButton
+                                android:id="@+id/fridgeinformation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/maineight"
+                                android:contentDescription="@string/lose_img" />
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/my_refrigerator"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="50dp">
+
+                            <ImageButton
+                                android:id="@+id/foodshowmanager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/maintwo"
+                                android:contentDescription="@string/lose_img" />
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/menu_tip"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="50dp">
+
+                            <ImageButton
+                                android:id="@+id/healthmanager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/mainfour"
+                                android:contentDescription="@string/lose_img" />
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/health_tip"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical">
+
+                    <com.example.administrator.newfridge.view.adapter.EmptyRecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <include
+                        android:id="@+id/empty_view"
+                        layout="@layout/emptyview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </TableLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/actionmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                fab:menu_colorNormal="?android:attr/colorPrimary"
+                fab:menu_colorPressed="?android:attr/colorPrimary"
+                fab:menu_colorRipple="#99FFFFFF"
+                fab:menu_icon="@drawable/floataction_add"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/menu_item_linearlayout"
+                    style="@style/floatactionbutton_style"
+                    android:src="@drawable/floataction_list"
+                    fab:fab_colorNormal="?android:attr/colorPrimary"
+                    fab:fab_colorPressed="?android:attr/colorPrimary"
+                    fab:fab_colorRipple="@color/gray"
+                    fab:fab_label="@string/One" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/menu_item_gridlayout"
+                    style="@style/floatactionbutton_style"
+                    android:src="@drawable/floataction_grid"
+                    fab:fab_colorNormal="?android:attr/colorPrimary"
+                    fab:fab_colorPressed="?android:attr/colorPrimary"
+                    fab:fab_colorRipple="@color/gray"
+                    fab:fab_label="@string/Two" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/menu_item_staggeredlayout"
+                    style="@style/floatactionbutton_style"
+                    android:src="@drawable/floataction_staggle"
+                    fab:fab_colorNormal="?android:attr/colorPrimary"
+                    fab:fab_colorPressed="?android:attr/colorPrimary"
+                    fab:fab_colorRipple="@color/gray"
+                    fab:fab_label="@string/Three"
+                    fab:fab_size="normal" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_myinfo" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffebebeb"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/account_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="8.6dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="8.6dp">
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="Header"
+            android:src="@drawable/nav_kawayi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="16.6dp"
+            android:paddingRight="16.6dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RollingZ"
+                android:textColor="#2e2e2e"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.5dp"
+                    android:text="账号: "
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/usernumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.5dp"
+                    android:text="18846438321"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!--<TextView
+            android:id="@+id/action_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/menu_item_padding"
+            android:paddingTop="@dimen/menu_item_padding"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/text_setting_setting"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/menu_item_text_size" />-->
+        <TextView
+            android:id="@+id/action_about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="性别：男"
+            android:textColor="#313131"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/action_abouttwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="身体状况：健康"
+            android:textColor="#313131"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+</LinearLayout>

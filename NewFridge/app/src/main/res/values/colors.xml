@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3fc2e3</color>
+    <color name="colorPrimaryDark">#339ec7</color>
+    <color name="colorAccent">#3fc2e3</color>
+    <color name="colorPrimaryDarkTrans">#CCf57257</color>
+    <color name="navigationBarColor">#f46444</color>
+
+
+    <color name="primary_text">#333333</color>
+    <color name="secondary_text">#cccccc</color>
+    <color name="divider">#e1e1e1</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="orange_light">#fec107</color>
+    <color name="black">#212121</color>
+
+    <color name="waikuang">#99DCE2</color>
+    <color name="layer1">#D4F0F3</color>
+    <color name="layer2">#99DCE2</color>
+    <color name="layer3">#56C1C7</color>
+    <color name="layer4">#278891</color>
+    <color name="line">#E96153</color>
+
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+
+    <color name="background">#FFFFFF</color>
+
+    <color name="split_line">#11112233</color>
+
+    <color name="text1">#59B29C</color>
+
+    <color name="text2">#333333</color>
+
+    <color name="hong">#FFF000</color>
+    <!--scan-->
+
+    <color name="result_view">#b0000000</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="possible_result_points">#c0ffff00
+    </color>
+
+
+
+
+</resources>
+

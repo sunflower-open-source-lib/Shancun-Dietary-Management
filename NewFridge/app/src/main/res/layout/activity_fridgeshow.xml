@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="管理冰箱"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical">
+
+        <com.example.administrator.newfridge.view.adapter.EmptyRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/empty_view"
+            layout="@layout/emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/secondary_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fridgeactionmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            fab:menu_colorNormal="?android:attr/colorPrimary"
+            fab:menu_colorPressed="?android:attr/colorPrimary"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_icon="@drawable/floataction_add"
+            tools:targetApi="lollipop">
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fridgeaddAction"
+                style="@style/floatactionbutton_style"
+                android:src="@drawable/floataction_list"
+                fab:fab_colorNormal="?android:attr/colorPrimary"
+                fab:fab_colorPressed="?android:attr/colorPrimary"
+                fab:fab_colorRipple="@color/gray"
+                fab:fab_label="添加冰箱" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fridgeDelectAction"
+                style="@style/floatactionbutton_style"
+                android:src="@drawable/floataction_grid"
+                fab:fab_colorNormal="?android:attr/colorPrimary"
+                fab:fab_colorPressed="?android:attr/colorPrimary"
+                fab:fab_colorRipple="@color/gray"
+                fab:fab_label="删除冰箱" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+</LinearLayout>

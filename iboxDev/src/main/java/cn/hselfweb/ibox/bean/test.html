@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<script src="//libs.baidu.com/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script src="//libs.baidu.com/jqueryui/1.10.0/jquery-ui.min.js" type="text/javascript"></script>
+<script src="//ali.xinshipu.cn/js/xinshipu.desktop2014.20181212.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="//ali.xinshipu.cn/css/ui-lightness-1.10.0/jquery-ui-1.10.0.custom.min.css">
+<script src="//ali.xinshipu.cn/js/zuofa.desktop2017.20170919.js" type="text/javascript"></script> <script type="text/javascript">
+    $(document).ready(function() {
+        init("zuofa");
+        function getTrackInfo(link){
+            return decodeURIComponent(window.location)+'|'+link.attr('trackinfo')+'|'+decodeURIComponent(link.attr('href'))
+        }
+
+        $(".shipu").click(function() {
+            ga('send', 'event', 'zuofa', 'ShipuClk', getTrackInfo($(this)));
+        });
+
+        $(".zhishi").click(function() {
+            ga('send', 'event', 'zuofa', 'ZhiShiClk', getTrackInfo($(this)));
+        });
+
+        $(".video").click(function() {
+            ga('send', 'event', 'zuofa', 'VideoClk', getTrackInfo($(this)));
+        });
+
+        $(".thread").click(function() {
+            ga('send', 'event', 'zuofa', 'ThreadClk', getTrackInfo($(this)));
+        });
+    });
+</script>
+
+<script src="//ali.xinshipu.cn/js/zoom.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "番茄土豆炖牛肉",
+  "image": "http://ali.xinshipu.cn/20110403/original/1301784181451.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "巧媳妇"
+  },
+  "description": "红汤酸甜，肉质嫩滑。",
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.0",
+    "reviewCount": "478"
+  },
+
+  "recipeIngredient": [
+	"牛肉500克","番茄500克","黄皮土豆500克","白皮洋葱100克","
+：盐5克","姜5克","植物油25克"
+  ],
+  "recipeInstructions": "1.牛肉洗净后切成3厘米的块，随冷水入锅烧经沸，去除浮沫，捞出再用清水洗净血污待用；
+2.土豆削皮后切3厘米大小的块；
+3.洋葱分成3厘米左右的片；
+4.西红柿经开水烫后，去皮，用手撕成小块；
+5.锅内入油烧热至六七成热时，放生姜片爆香炒一会儿；
+6.入牛肉和土豆翻炒数十次后，加西红柿和清汤；
+7.烧沸后再改用中火炖至牛肉松软，土豆散裂，加入洋葱片和精盐；
+8.再改大火蒸烧沸1至2分钟即可。"
+}
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/create_family"
+        app:showAsAction="never"
+        android:title="创建家庭" />
+
+    <item
+        android:id="@+id/join_family"
+        app:showAsAction="never"
+        android:title="加入家庭" />
+
+    <item
+        android:id="@+id/exit_family"
+        app:showAsAction="never"
+        android:title="退出家庭" />
+
+    <item
+        android:id="@+id/refresh_family"
+        app:showAsAction="never"
+        android:title="刷新家庭"/>
+
+</menu>

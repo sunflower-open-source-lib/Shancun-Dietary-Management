@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white">
+        </android.support.v7.widget.Toolbar>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Nice Family"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/me_bg"/>
+        </FrameLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-70dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/xiaomiao"/>
+        </android.support.v7.widget.CardView>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/setting_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            leon:isShowRightText="false"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/mememe"
+            leon:leftText="个人信息"
+            leon:leftTextMarginLeft="16dp" />
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/setting_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowRightText="true"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/twotwotwo"
+            leon:leftText="版本号"
+            leon:leftTextMarginLeft="16dp"
+            leon:rightText="V1.0"
+            leon:rightTextColor="#999999"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/setting_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/oneoneone"
+            leon:leftText="已收藏"
+            leon:leftTextMarginLeft="16dp"
+            leon:rightTextColor="#999999"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/setting_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/fourfourfour"
+            leon:leftText="家庭组"
+            leon:leftTextMarginLeft="16dp"
+            leon:rightTextColor="#999999"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
